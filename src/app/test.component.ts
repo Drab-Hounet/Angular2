@@ -1,10 +1,12 @@
-import { Component }            from '@angular/core';
-import { NgModule }             from '@angular/core';
-import { Router }               from '@angular/router';
+import { Component }    from '@angular/core';
 
 @Component({
   selector: 'my-test',
-  template: `<h1> {{title}}</h1>`,
+  template: ` <h1> {{title}}</h1>
+              <ul>
+                <my-list></my-list>
+              </ul>
+              `,
 })
 
 export class TestComponent {

@@ -9,8 +9,13 @@ import { AppComponent }         from './app.component';
 import { HeroDetailComponent }  from './hero-detail/hero-detail.component';
 import { HeroesComponent }      from './heroes/heroes.component';
 import { HeroService }          from './service/hero.service';
+import { UserService }          from './service/user.service';
 import { DashboardComponent }   from './dashboard/dashboard.component';
+
 import { TestComponent }        from './test.component';
+import { ListUsersComponent }    from './listUsers.component';
+
+
 
 @NgModule({
   imports:      [
@@ -25,9 +30,12 @@ import { TestComponent }        from './test.component';
      HeroDetailComponent,
      HeroesComponent,
      TestComponent,
+     ListUsersComponent,
   ],
   providers: [
-    HeroService ],
+    HeroService,
+    UserService
+    ],
   bootstrap:    [
     AppComponent
   ]
